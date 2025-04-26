@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px 50px 50px 50px; 
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    font-size: large;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .create-job-btn {
+    background-color: #8b3dff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  
+    .create-job-btn {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 18px;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .create-job-btn {
+      padding: 8px 14px;
+      font-size: medium;
+    }
+  }
+  

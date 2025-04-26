@@ -1,0 +1,123 @@
+/* Modal Overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    
+    
+  }
+  
+  /* Modal Heading */
+  .modal-heading {
+   
+    margin-bottom: 25px;
+    text-align: center;
+    
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs and Select */
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #007bff;
+    background: #fff;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* First four fields in two lines */
+  .samecopy-for-firstfour .form-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Form Style */
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Modal Buttons */
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  /* Save Draft Button */
+  .save-draft {
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .save-draft:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Publish Button */
+  .publish {
+    padding: 10px 25px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .publish:hover {
+    background: #0056b3;
+  }
+  
