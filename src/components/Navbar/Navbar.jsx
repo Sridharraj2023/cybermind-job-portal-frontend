@@ -4,9 +4,12 @@ import './Navbar.css';
 const Navbar = (props) => {
 
   return (
-    <nav className="navbar">
-      <img className="logo" src='https://www.cybermindworks.com/images/cmwlogo.svg'></img>
+    <nav className="navbar">  
+      
+      
+      
       <ul className="nav-links">
+      <img src='https://www.cybermindworks.com/images/cmwlogo.svg'></img>
         <li><a href="/">Home</a></li>
         <li><a href="/">Find Jobs</a></li>
         <li><a href="/">Find Talents</a></li>

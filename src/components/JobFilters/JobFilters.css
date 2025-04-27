@@ -11,7 +11,7 @@
 .filter-container {
     background-color: #fff;
     padding: 30px 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 4px 4px 10px rgba(0.05, 0.05, 0.05, 0.05);
     margin: 20px 40px;
     border-radius: 16px;
     
@@ -79,3 +79,25 @@
     gap: 20px;
   }
   
+
+  @media (max-width: 768px) {
+    .filter-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+      align-items: stretch; /* stretch filters full width */
+    }
+  
+    .filter-item {
+      width: 100%;
+      flex: none;
+    }
+  
+    .salary-lable {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

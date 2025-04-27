@@ -7,7 +7,7 @@
     padding: 20px 40px;
     background-color: #e2e8f0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 50px 50px 50px 50px; 
+    border-radius: 60px 60px 60px 60px; 
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -15,11 +15,7 @@
     font-size: large;
   }
   
-  .logo {
-    font-size: 22px;
-    font-weight: 700;
-    color: #000;
-  }
+  
   
   .nav-links {
     list-style: none;
@@ -47,9 +43,16 @@
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
+      align-items: center;
+      text-align: center;
       height: auto;
       padding: 20px;
+      width: auto;
+      font-size: auto;
     }
+
+  
+    
   
     .nav-links {
       flex-direction: column;
@@ -59,13 +62,25 @@
   
     .create-job-btn {
       margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    
     }
   }
   
   @media (max-width: 480px) {
-    .logo {
-      font-size: 18px;
+
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      padding: 20px;
+      width: auto;
+      font-size: auto;
     }
+
+
   
     .nav-links {
       gap: 10px;
@@ -74,6 +89,7 @@
     .create-job-btn {
       padding: 8px 14px;
       font-size: medium;
+      
     }
   }
   
