@@ -23,23 +23,20 @@
 
 .job-info p{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   width: auto;
   font-size: medium;
+  word-break: break-word;
 }
 
-.job-location-icon{
-  height: 20px;
-  width: 20px;
-  color: black;
-}
-
-.salary-icon{
-  height: 20px;
-  width: 20px;
+.job-location-icon,
+.salary-icon {
+  height: 18px;
+  width: 18px;
   color: black;
 }
 
@@ -133,7 +130,22 @@
     width: 80%;
     margin: 20px auto;
   }
+
+  .job-info p {
+    font-size: 16px;
+    gap: 6px;
+  }
+
+  .job-location-icon,
+  .salary-icon {
+    height: 16px;
+    width: 16px;
+  }
 }
+
+
+
+
 
 /* For very small screens */
 @media (max-width: 480px) {
@@ -142,11 +154,17 @@
   }
 
   .location, .job-info, .posted-time {
-    font-size: 14px;
+    font-size: 5px;
   }
 
   .apply-btn {
     font-size: 16px;
     padding: 10px;
   }
+
+  .job-info p {
+    flex-direction: column; /* Stack vertically for very small screens */
+    gap: 4px;
+  }
+  
 }
