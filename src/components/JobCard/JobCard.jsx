@@ -19,8 +19,10 @@ const JobCard = ({ job }) => {
       <h3 className="compnany-name">{job.companyName}</h3>
 
       <div className="job-info">
-        <p>{job.jobType} | ₹{job.salaryRange}</p> {/* Correct fields */}
-        <p className="location">{job.location}</p>
+        <p>  {job.jobType} | 
+          <img className='job-location-icon' src="https://img.icons8.com/?size=100&id=nXSsBUXvvmYb&format=png&color=000000"/> {job.location}| 
+          <img className='salary-icon' src='https://img.icons8.com/?size=100&id=yKzYIzis8SZx&format=png&color=000000'/> {job.salaryRange}</p>  
+        
       </div>
 
       <ul className="description-list">

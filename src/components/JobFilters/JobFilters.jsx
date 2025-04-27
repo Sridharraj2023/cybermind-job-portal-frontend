@@ -37,8 +37,8 @@ const JobFilters = () => {
         {/* Salary Range */}
         <div className="filter-item salary-range">
             <div className="salary-lable">
-            <label>Salary Per Month</label>
-            <span>₹50k</span> - <span>₹80k</span>
+            <label>Salary</label>
+            <span>(₹50LPA</span>-<span>₹80LPA)</span>
             </div>
           
           <input type="range" min="10000" max="100000" />

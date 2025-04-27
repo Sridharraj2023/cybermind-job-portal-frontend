@@ -76,7 +76,9 @@
 
   .salary-lable{
     display: flex;
+    justify-content: space-between;
     gap: 20px;
+   
   }
   
 
@@ -97,8 +99,5 @@
       flex: none;
     }
   
-    .salary-lable {
-      flex-direction: column;
-      gap: 10px;
-    }
+    
   }

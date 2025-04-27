@@ -103,14 +103,38 @@ const CreateJobModal = ({ isOpen, onRequestClose }) => {
         </div>
 
         <div className="form-group">
-          <input
-            type="text"
-            name="salaryRange"
-            placeholder="Salary Range (e.g., ₹50,000 - ₹80,000)"
-            value={formData.salaryRange}
-            onChange={handleChange}
-            required
-          />
+        <input
+          type="text"
+          name="salaryRange"
+          placeholder="Salary Range (e.g., 5LPA - 12LPA)"
+          value={formData.salaryRange}
+          onChange={handleChange}
+          onInput={(e) => {
+            let input = e.target.value;
+
+            // Allow only numbers, LPA, -, and space
+            input = input.replace(/[^0-9lLpaPA-\s]/g, '');
+
+            // Split input around hyphen
+            let parts = input.split('-').map(part => part.trim());
+
+            parts = parts.map(part => {
+              let numberPart = part.replace(/[^0-9]/g, '');
+              let letterPart = part.replace(/[0-9\s-]/g, '').toUpperCase();
+
+              if (numberPart.length > 2) {
+                numberPart = numberPart.slice(0, 2); // Limit to 2 digits
+              }
+
+              // Make sure the label is exactly 'LPA'
+              return numberPart + (letterPart.includes('LPA') ? 'LPA' : 'LPA');
+            });
+
+            e.target.value = parts.join(' - ');
+          }}
+          required
+        />
+
         </div>
 
         <div className="form-group">

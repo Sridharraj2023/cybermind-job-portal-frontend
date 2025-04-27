@@ -21,6 +21,28 @@
   overflow: hidden;
 }
 
+.job-info p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  font-size: medium;
+}
+
+.job-location-icon{
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+
+.salary-icon{
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+
 .job-card:hover {
   transform: translateY(-5px);
 }
