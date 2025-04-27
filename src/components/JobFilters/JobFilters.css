@@ -88,11 +88,12 @@
   
     .filter-section {
       flex-direction: column;
+      width: auto;
       align-items: stretch; /* stretch filters full width */
     }
   
     .filter-item {
-      width: 100%;
+      width: auto;
       flex: none;
     }
   
