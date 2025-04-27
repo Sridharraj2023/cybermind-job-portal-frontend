@@ -20,7 +20,7 @@ const JobCard = ({ job }) => {
 
       <div className="job-info">
         <p>  {job.jobType} | 
-          <img className='job-location-icon' src="https://img.icons8.com/?size=100&id=nXSsBUXvvmYb&format=png&color=000000"/> {job.location}| 
+          <img className='job-location-icon' src="https://img.icons8.com/?size=100&id=nXSsBUXvvmYb&format=png&color=000000"/> {job.location} | 
           <img className='salary-icon' src='https://img.icons8.com/?size=100&id=yKzYIzis8SZx&format=png&color=000000'/> {job.salaryRange}</p>  
         
       </div>
