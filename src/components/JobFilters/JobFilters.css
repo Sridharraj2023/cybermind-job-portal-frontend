@@ -50,6 +50,22 @@
     color: #888;
     
   }
+
+  .job-info p {
+    display: flex;
+    flex-wrap: wrap; /* Important to allow wrapping */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: medium;
+    text-align: center;
+    word-break: break-word; /* Break long text if needed */
+  }
+
+  .job-location-icon, .salary-icon {
+  height: 18px;
+  width: 18px;
+}
   
   .salary-range {
     flex-direction: column;
@@ -80,7 +96,6 @@
     gap: 20px;
    
   }
-  
 
   @media (max-width: 768px) {
     .filter-container {
@@ -98,6 +113,30 @@
       width: auto;
       flex: none;
     }
+    
+    .job-info p {
+      font-size: 16px;
+      gap: 6px;
+    }
+  
+    .job-location-icon,
+    .salary-icon {
+      height: 16px;
+      width: 16px;
+    }
   
     
+  }
+
+  @media (max-width: 480px) {
+
+    .filter-item {
+      width: auto;
+      flex: none;
+    }
+    
+    .job-info p {
+      flex-direction: column; /* Stack vertically for very small screens */
+      gap: 4px;
+    }
   }

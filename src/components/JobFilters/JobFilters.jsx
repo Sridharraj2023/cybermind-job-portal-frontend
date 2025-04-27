@@ -52,4 +52,3 @@ const JobFilters = () => {
 };
 
 export default JobFilters;
-
